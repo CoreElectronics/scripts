@@ -14,7 +14,7 @@ then
     echo "$file found."
 else
     echo "$file not found - downloading"
-    wget -O "$SOURCE" "LCD_show_$VERSION.tar.gz"
+    wget -O "LCD_show_$VERSION.tar.gz" $SOURCE
 fi
 
 
