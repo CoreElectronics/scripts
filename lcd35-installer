@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# This script will download and install the necessary files to 
+# drive the 3.5" touch display.
+
+VERSION="v6_1_3"
+SOURCE="https://goo.gl/yZPq4p"
+cd ~
+
+# Check if drivers archive already exists
+file="./LCD_show_$VERSION.tar.gz"
+if [ -f "$file" ]
+then
+    echo "$file found."
+else
+    echo "$file not found - downloading"
+    wget -O "$SOURCE" "LCD_show_$VERSION.tar.gz"
+fi
+
+
+# Check if archive is already extracted
+directory="./LCD_show_$VERSION/"
+if [ -d "$directory" ]
+then
+    echo already extracted
+else
+    echo extracting...
+    tar -xvzf LCD_show_v6_1_3.tar.gz
+fi
+
+echo Beginning installation
+cd $directory
+./LCD35_v
