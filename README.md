@@ -5,3 +5,4 @@
 * [lcd35-installer](lcd35-installer) - Installer script for 3.5" touch display for Raspberry Pi. Trigger installation by executing `curl -L http://coreelec.io/2q | bash`
 * [relayTest.py](relayTest.py) - Demo for the 3-channel 'RPi Relay Board'
 * [camTest.py](camTest.py) - Camera preview script for quickstarting
+* [rpi-3-ws2812b](rpi-3-ws2812b) - Install python support for WS2812B LEDs (trade name: NeoPixel)
