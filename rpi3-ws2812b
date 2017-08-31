@@ -21,3 +21,4 @@ scons
 
 cd python
 sudo python setup.py install
+cd
