@@ -3,8 +3,8 @@
 # This script will download and install the necessary files to 
 # drive the 3.5" touch display.
 
-VERSION="v6_1_3"
-SOURCE="https://goo.gl/yZPq4p"
+VERSION="180331"
+SOURCE="https://www.waveshare.com/w/upload/3/34/LCD-show-180331.tar.gz"
 cd ~
 
 # Check if drivers archive already exists
@@ -25,9 +25,10 @@ then
     echo already extracted
 else
     echo extracting...
-    tar -xvzf LCD_show_v6_1_3.tar.gz
+    tar -xvzf LCD_show_$VERSION.tar.gz
 fi
 
 echo Beginning installation
-cd $directory
-./LCD35_v
+cd LCD-show/
+chmod +x LCD35-show
+./LCD35-show
